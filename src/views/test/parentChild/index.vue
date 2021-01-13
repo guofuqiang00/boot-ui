@@ -29,6 +29,10 @@
     // 引入子组件
     import Child from '../parentChild/child';
     export default {
+        // 引入子组件
+        components: {
+            Child
+        },
         data() {
             // 对表单提交，进行简单的校验，可忽略
             var validatePass = (rule, value, callback) => {
@@ -74,10 +78,7 @@
                 show: false,
             };
         },
-        // 引入子组件
-        components: {
-            Child
-        },
+
         methods: {
 
             // 点击提交，调用方法
